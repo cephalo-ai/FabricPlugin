@@ -36,8 +36,8 @@ module.exports = {
         xcodeProject.hash.project.objects.PBXShellScriptBuildPhase[id] = {
             isa: "PBXShellScriptBuildPhase",
             buildActionMask: 2147483647,
-            files: [],
-            inputPaths: ["$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)"],
+            files: ["$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)"],
+            inputPaths: [],
             name: comment,
             outputPaths: [],
             runOnlyForDeploymentPostprocessing: 0,
