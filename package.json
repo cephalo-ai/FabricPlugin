@@ -41,7 +41,6 @@
     "scripts": {
         "transpile": "node_modules/.bin/babel www/*.es6 --out-dir .",
         "add-packages": "./scripts/add-packages.sh",
-        "postinstall": "opencollective postinstall"
     },
     "devDependencies": {
         "babel": "^5.8.35"
@@ -50,11 +49,4 @@
         "fabric": "1.7.2",
         "crashlytics": "3.9.3"
     },
-    "dependencies": {
-        "opencollective": "^1.0.3"
-    },
-    "collective": {
-        "type": "opencollective",
-        "url": "https://opencollective.com/FabricPlugin"
-    }
 }
