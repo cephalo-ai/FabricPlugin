@@ -43,7 +43,8 @@
         "add-packages": "./scripts/add-packages.sh"
     },
     "devDependencies": {
-        "babel": "^5.8.35"
+        "babel": "^5.8.35",
+        "xcode": "^2.0.0"
     },
     "packages": {
         "fabric": "1.7.2",
