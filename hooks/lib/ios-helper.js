@@ -21,7 +21,7 @@ module.exports = {
     addShellScriptBuildPhase: function (context, xcodeProjectPath) {
 
         var pluginConfig = utilities.getPluginConfig("ios");
-        
+
         // Read and parse the XCode project (.pxbproj) from disk.
         // File format information: http://www.monobjc.net/xcode-project-file-format.html
         var xcodeProject = xcode.project(xcodeProjectPath);
@@ -36,8 +36,8 @@ module.exports = {
         xcodeProject.hash.project.objects.PBXShellScriptBuildPhase[id] = {
             isa: "PBXShellScriptBuildPhase",
             buildActionMask: 2147483647,
-            files: ["$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)"],
-            inputPaths: [],
+            files: [],
+            inputPaths: ["$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)"],
             name: comment,
             outputPaths: [],
             runOnlyForDeploymentPostprocessing: 0,
